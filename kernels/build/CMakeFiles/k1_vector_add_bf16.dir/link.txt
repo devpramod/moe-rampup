@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k1_vector_add_bf16.dir/k1_vector_add_bf16/k1_vector_add_bf16.cpp.o -o k1_vector_add_bf16 

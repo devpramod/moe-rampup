@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k5_rmsnorm.dir/k5_rmsnorm/k5_rmsnorm.cpp.o -o k5_rmsnorm 

@@ -1,0 +1,10 @@
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k1_vector_add_bf16.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k2_vector_fma.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k3_reduction.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k3_reduction_unroll_jam.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k4_silu.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k5_rmsnorm.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k5_rmsnorm_newton.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/k6_softmax.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/edit_cache.dir
+/mnt/nvme/pramod/moe-rampup/kernels/build/CMakeFiles/rebuild_cache.dir

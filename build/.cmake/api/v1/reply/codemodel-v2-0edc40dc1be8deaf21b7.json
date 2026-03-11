@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "moe_kernels",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "k1_vector_add_bf16::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k1_vector_add_bf16-Debug-6c83b90ad8c9891654cc.json",
+					"name" : "k1_vector_add_bf16",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k2_vector_fma::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k2_vector_fma-Debug-6fd897118248c982caec.json",
+					"name" : "k2_vector_fma",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k3_reduction::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k3_reduction-Debug-e602b4dda0777a90b92a.json",
+					"name" : "k3_reduction",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k3_reduction_unroll_jam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k3_reduction_unroll_jam-Debug-a31829ff5a3bad62d174.json",
+					"name" : "k3_reduction_unroll_jam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k4_silu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k4_silu-Debug-14f7bb4b5e7f68aef74d.json",
+					"name" : "k4_silu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k5_rmsnorm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k5_rmsnorm-Debug-1a0a967de96d70612b2a.json",
+					"name" : "k5_rmsnorm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k5_rmsnorm_newton::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k5_rmsnorm_newton-Debug-f65181311b5c61fce74e.json",
+					"name" : "k5_rmsnorm_newton",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "k6_softmax::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-k6_softmax-Debug-07d38dbf09e3ec5814d3.json",
+					"name" : "k6_softmax",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/mnt/nvme/pramod/moe-rampup/build",
+		"source" : "/mnt/nvme/pramod/moe-rampup/kernels"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

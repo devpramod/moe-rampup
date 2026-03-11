@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k2_vector_fma.dir/k2_vector_fma/k2_vector_fma.cpp.o -o k2_vector_fma 

@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k4_silu.dir/k4_silu/k4_silu.cpp.o -o k4_silu 

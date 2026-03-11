@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -mavx512vl -mavx512bf16 -std=gnu++17 -o CMakeFiles/k1_vector_add_bf16.dir/k1_vector_add_bf16/k1_vector_add_bf16.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k1_vector_add_bf16/k1_vector_add_bf16.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k1_vector_add_bf16/k1_vector_add_bf16.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k2_vector_fma.dir/k2_vector_fma/k2_vector_fma.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k2_vector_fma/k2_vector_fma.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k2_vector_fma/k2_vector_fma.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k3_reduction.dir/k3_reduction/k3_reduction.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k3_reduction/k3_reduction.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k3_reduction/k3_reduction.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k3_reduction_unroll_jam.dir/k3_reduction/k3_reduction_unroll_jam.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k3_reduction/k3_reduction_unroll_jam.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k3_reduction/k3_reduction_unroll_jam.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k4_silu.dir/k4_silu/k4_silu.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k4_silu/k4_silu.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k4_silu/k4_silu.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k5_rmsnorm.dir/k5_rmsnorm/k5_rmsnorm.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k5_rmsnorm/k5_rmsnorm.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k5_rmsnorm/k5_rmsnorm.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k5_rmsnorm_newton.dir/k5_rmsnorm/k5_rmsnorm_newton.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k5_rmsnorm/k5_rmsnorm_newton.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k5_rmsnorm/k5_rmsnorm_newton.cpp"
+},
+{
+  "directory": "/mnt/nvme/pramod/moe-rampup/build",
+  "command": "/usr/bin/g++-12 -I/mnt/nvme/pramod/moe-rampup/kernels/common  -march=native -O3 -fopenmp -g -O0 -fsanitize=address -march=native -fopenmp -mavx512f -std=gnu++17 -o CMakeFiles/k6_softmax.dir/k6_softmax/k6_softmax.cpp.o -c /mnt/nvme/pramod/moe-rampup/kernels/k6_softmax/k6_softmax.cpp",
+  "file": "/mnt/nvme/pramod/moe-rampup/kernels/k6_softmax/k6_softmax.cpp"
+}
+]

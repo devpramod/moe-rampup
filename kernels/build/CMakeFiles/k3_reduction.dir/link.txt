@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k3_reduction.dir/k3_reduction/k3_reduction.cpp.o -o k3_reduction 

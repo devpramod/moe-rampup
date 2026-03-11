@@ -1,0 +1,147 @@
+./k1_vector_add_bf16 1048576
+
+╔══════════════════════════════════════════════════════════╗
+║  K1: Vector Add (BF16)                                 ║
+╚══════════════════════════════════════════════════════════╝
+
+  Array size:     1048576 elements (2.0 MB per array in BF16)
+  Total data:     6.0 MB (3 arrays × read a + read b + write c)
+
+────────────────────────────────────────────────────────────
+  Stage 1: Scalar Reference
+────────────────────────────────────────────────────────────
+  Scalar throughput:                   17.364 GB/s
+────────────────────────────────────────────────────────────
+  Stage 2: AVX512 FP32 (warm-up)
+────────────────────────────────────────────────────────────
+  ✓ AVX512 FP32          PASS
+  AVX512 FP32 throughput:              30.314 GB/s
+────────────────────────────────────────────────────────────
+  Stage 3: AVX512 BF16
+────────────────────────────────────────────────────────────
+  ✓ AVX512 BF16          PASS  (max rel err = 0.00e+00)
+  AVX512 BF16 throughput:              20.651 GB/s
+
+────────────────────────────────────────────────────────────
+  Performance Target: >80% of peak memory bandwidth
+  Your Xeon 8568Y+ (EMR): ~300 GB/s single-socket
+  80% target: ~240 GB/s
+────────────────────────────────────────────────────────────
+
+  NEXT STEPS:
+  1. Implement vector_add_fp32_avx512() as warm-up (optional)
+  2. Implement vector_add_bf16_avx512() — the real exercise
+  3. Try different array sizes:  ./k1_vector_add_bf16 1048576
+  4. Once passing, try: vary n from 1K to 256M to see
+     when you transition from cache-bound to DRAM-bound
+
+ubuntu@master1:/mnt/nvme/pramod/moe-rampup/kernels/build$ ./k1_vector_add_bf16 67108864
+
+╔══════════════════════════════════════════════════════════╗
+║  K1: Vector Add (BF16)                                 ║
+╚══════════════════════════════════════════════════════════╝
+
+  Array size:     67108864 elements (128.0 MB per array in BF16)
+  Total data:     384.0 MB (3 arrays × read a + read b + write c)
+
+────────────────────────────────────────────────────────────
+  Stage 1: Scalar Reference
+────────────────────────────────────────────────────────────
+  Scalar throughput:                   15.585 GB/s
+────────────────────────────────────────────────────────────
+  Stage 2: AVX512 FP32 (warm-up)
+────────────────────────────────────────────────────────────
+  ✓ AVX512 FP32          PASS
+  AVX512 FP32 throughput:              15.167 GB/s
+────────────────────────────────────────────────────────────
+  Stage 3: AVX512 BF16
+────────────────────────────────────────────────────────────
+  ✓ AVX512 BF16          PASS  (max rel err = 0.00e+00)
+  AVX512 BF16 throughput:              18.741 GB/s
+
+────────────────────────────────────────────────────────────
+  Performance Target: >80% of peak memory bandwidth
+  Your Xeon 8568Y+ (EMR): ~300 GB/s single-socket
+  80% target: ~240 GB/s
+────────────────────────────────────────────────────────────
+
+  NEXT STEPS:
+  1. Implement vector_add_fp32_avx512() as warm-up (optional)
+  2. Implement vector_add_bf16_avx512() — the real exercise
+  3. Try different array sizes:  ./k1_vector_add_bf16 1048576
+  4. Once passing, try: vary n from 1K to 256M to see
+     when you transition from cache-bound to DRAM-bound
+
+ubuntu@master1:/mnt/nvme/pramod/moe-rampup/kernels/build$ ./k1_vector_add_bf16 671088640
+
+╔══════════════════════════════════════════════════════════╗
+║  K1: Vector Add (BF16)                                 ║
+╚══════════════════════════════════════════════════════════╝
+
+  Array size:     671088640 elements (1280.0 MB per array in BF16)
+  Total data:     3840.0 MB (3 arrays × read a + read b + write c)
+
+────────────────────────────────────────────────────────────
+  Stage 1: Scalar Reference
+────────────────────────────────────────────────────────────
+  Scalar throughput:                    5.179 GB/s
+────────────────────────────────────────────────────────────
+  Stage 2: AVX512 FP32 (warm-up)
+────────────────────────────────────────────────────────────
+  ✓ AVX512 FP32          PASS
+  AVX512 FP32 throughput:              14.906 GB/s
+────────────────────────────────────────────────────────────
+  Stage 3: AVX512 BF16
+────────────────────────────────────────────────────────────
+  ✓ AVX512 BF16          PASS  (max rel err = 0.00e+00)
+  AVX512 BF16 throughput:              13.605 GB/s
+
+────────────────────────────────────────────────────────────
+  Performance Target: >80% of peak memory bandwidth
+  Your Xeon 8568Y+ (EMR): ~300 GB/s single-socket
+  80% target: ~240 GB/s
+────────────────────────────────────────────────────────────
+
+  NEXT STEPS:
+  1. Implement vector_add_fp32_avx512() as warm-up (optional)
+  2. Implement vector_add_bf16_avx512() — the real exercise
+  3. Try different array sizes:  ./k1_vector_add_bf16 1048576
+  4. Once passing, try: vary n from 1K to 256M to see
+     when you transition from cache-bound to DRAM-bound
+
+ubuntu@master1:/mnt/nvme/pramod/moe-rampup/kernels/build$ ./k1_vector_add_bf16 256000000
+
+╔══════════════════════════════════════════════════════════╗
+║  K1: Vector Add (BF16)                                 ║
+╚══════════════════════════════════════════════════════════╝
+
+  Array size:     256000000 elements (488.3 MB per array in BF16)
+  Total data:     1464.8 MB (3 arrays × read a + read b + write c)
+
+────────────────────────────────────────────────────────────
+  Stage 1: Scalar Reference
+────────────────────────────────────────────────────────────
+  Scalar throughput:                   11.881 GB/s
+────────────────────────────────────────────────────────────
+  Stage 2: AVX512 FP32 (warm-up)
+────────────────────────────────────────────────────────────
+  ✓ AVX512 FP32          PASS
+  AVX512 FP32 throughput:              15.001 GB/s
+────────────────────────────────────────────────────────────
+  Stage 3: AVX512 BF16
+────────────────────────────────────────────────────────────
+  ✓ AVX512 BF16          PASS  (max rel err = 0.00e+00)
+  AVX512 BF16 throughput:              13.452 GB/s
+
+────────────────────────────────────────────────────────────
+  Performance Target: >80% of peak memory bandwidth
+  Your Xeon 8568Y+ (EMR): ~300 GB/s single-socket
+  80% target: ~240 GB/s
+────────────────────────────────────────────────────────────
+
+  NEXT STEPS:
+  1. Implement vector_add_fp32_avx512() as warm-up (optional)
+  2. Implement vector_add_bf16_avx512() — the real exercise
+  3. Try different array sizes:  ./k1_vector_add_bf16 1048576
+  4. Once passing, try: vary n from 1K to 256M to see
+     when you transition from cache-bound to DRAM-bound

@@ -1,0 +1,1 @@
+/usr/bin/g++-12  -march=native -O3 -fopenmp CMakeFiles/k6_softmax.dir/k6_softmax/k6_softmax.cpp.o -o k6_softmax 
